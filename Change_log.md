@@ -4,6 +4,31 @@
 
 #### [💾Latest stable release](https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/latest)
 ---
+## v3.141.01
+- NEW: 日本語翻訳を追加！Add Japanese translation.
+- NEW: Image Style is now a single unified selector.
+- NEW: The Scale Ratio / Denoise area now adapts to the media types in your list and remembers the view.
+- Files List status refactored internally and missing non-English translations completed.
+- NEW: Image Batching is now out of BETA.
+- NEW: All built-in help documents are now fully localized.
+- NEW: APNG files disguised as .png are now detected instantly when added to the list.
+- Fix bugs:
+- Save & Notifications: The "Save successful" notification now appears reliably when manually saving the file list, logged instead of triggering popups.
+- Automatic saves (shutdown, auto-archive) no longer trigger dialogs.
+- Custom Resolution: Fixed uppercase extensions (e.g. camera-produced .JPG) misidentified as videos causing "Unable to get resolution" errors;
+- Fixed concurrency defects during removal of files with custom resolution applied.
+- Auto-Shutdown: Fixed crash risk in countdown dialog and potential table-saving freezes during shutdown.
+- File Import: Fixed potential stack overflow in recycle-bin fallback, UNC network path/non-local URL guards, path normalization, and multi-dot filename handling.
+- Performance: Fixed memory leaks across dialogs and settings saving, reducing overall memory usage during long sessions.
+- Dark Mode: Scrollbar handle no longer disappears on long lists.
+- Fixed some other dark mode ui issues.
+- The View Folder button no longer appears blank when disabled.
+- Remove deprecated Waifu2x-Extension-GUI-Launcher references
+- The select folder button now properly disabled during processing.
+- Auto I/O redirect now implemented for picture batch processing pipeline.
+- Some UI layout improvements.
+
+---
 ## v3.140.01
 - ★ Dark Mode ☆
 - Now you can switch between light/dark mode skin at the Home tab.
